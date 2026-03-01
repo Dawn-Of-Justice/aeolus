@@ -1,0 +1,58 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aeolus"
+version = "0.1.0"
+description = "P2P Semantic Negotiation Layer for Autonomous AI Agents"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+authors = [{name = "Aeolus Team"}]
+keywords = ["p2p", "agents", "negotiation", "AI", "mistral", "nats", "llm"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries",
+]
+
+dependencies = [
+    "python-dotenv>=1.0.0",
+    "mistralai>=1.0.0",
+    "nats-py>=2.7.0",
+    "httpx>=0.27.0",
+    "pydantic>=2.0.0",
+    "pydantic-settings>=2.0.0",
+    "numpy>=1.26.0",
+]
+
+[project.optional-dependencies]
+dashboard = [
+    "streamlit>=1.30.0",
+    "networkx>=3.2.0",
+    "plotly>=5.19.0",
+]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-asyncio>=0.23.0",
+    "rich>=13.0.0",
+]
+
+[project.urls]
+Repository = "https://github.com/aeolus-ai/aeolus"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["aeolus*"]
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+addopts = "--strict-markers -v"
+testpaths = ["tests"]
+asyncio_mode = "auto"

@@ -1,0 +1,37 @@
+# ── Aeolus Dependencies ──────────────────────────────────────────────────────
+
+# Runtime
+python-dotenv>=1.0.0
+
+# Mistral API (primary LLM provider)
+mistralai>=1.0.0
+
+# Ollama Python SDK (local fallback)
+ollama>=0.3.0
+
+# P2P Transport
+nats-py>=2.7.0            # Primary transport (reliable, cross-platform)
+# py-libp2p>=0.4.0        # True P2P (uncomment if stable on your platform)
+
+# Web / API
+fastapi>=0.110.0
+uvicorn[standard]>=0.29.0
+httpx>=0.27.0
+
+# Data / Schema
+pydantic>=2.0.0
+pydantic-settings>=2.0.0
+
+# Semantic matching
+numpy>=1.26.0
+scikit-learn>=1.4.0       # cosine_similarity
+
+# Dashboard
+streamlit>=1.30.0
+networkx>=3.2.0
+plotly>=5.19.0            # Interactive graph for Streamlit
+
+# Dev / Testing
+pytest>=8.0.0
+pytest-asyncio>=0.23.0
+rich>=13.0.0              # Pretty terminal output

@@ -1,0 +1,2 @@
+{"action": "submit_task", "task_description": "helo", "max_latency_ms": 15000, "min_quality": 0.7, "priority": 5}
+{"action": "submit_task", "task_description": "hi", "max_latency_ms": 15000, "min_quality": 0.7, "priority": 5}
