@@ -49,7 +49,7 @@ pip install -r requirements.txt
 nats-server &
 
 # Run the main application
-python scripts/question_run_with_ollama_locally.py
+python scripts/main.py
 ```
 
 ### Configure Agent Behaviour
