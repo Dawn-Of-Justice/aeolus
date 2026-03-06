@@ -28,6 +28,15 @@ build/
 /tmp/aeolus_state.json
 aeolus_state.json
 
+# Runtime data
+*.jsonl
+events.jsonl
+task_queue.jsonl
+
+# NATS server binary
+nats-server
+nats-server.exe
+
 # Secrets
 .env
 

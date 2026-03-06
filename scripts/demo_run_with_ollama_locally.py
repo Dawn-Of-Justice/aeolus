@@ -135,8 +135,7 @@ def maybe_start_dashboard() -> subprocess.Popen | None:
 
 async def run_demo():
 	console.print(Panel.fit(
-		"[bold cyan]🌬️  Aeolus — Local Ollama Demo[/bold cyan]\n"
-		"[dim]Mistral Worldwide Hackathon · Feb 28 – Mar 1, 2026[/dim]",
+		"[bold cyan]🌬️  Aeolus — Local Ollama Demo[/bold cyan]",
 		border_style="cyan",
 	))
 	console.print(

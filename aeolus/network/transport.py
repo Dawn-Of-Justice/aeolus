@@ -1,4 +1,4 @@
-"""NATS-based messaging transport (primary for hackathon; fallback for py-libp2p).
+"""NATS-based messaging transport (primary transport; fallback for py-libp2p).
 
 Provides GossipSub-like pub/sub semantics over NATS. Each agent subscribes
 to the capability broadcast topic and a direct-message inbox topic.

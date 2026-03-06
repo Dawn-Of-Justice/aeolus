@@ -1,6 +1,6 @@
 """
 scripts/demo_scenario.py
-Scripted 3-agent demo for the hackathon presentation.
+Scripted 3-agent demo.
 Runs three agents locally (same machine, same NATS) and walks through:
   1. Discovery
   2. Simple task (summarisation routed to right agent)
@@ -107,8 +107,7 @@ DEMO_TASKS = [
 
 async def run_demo():
     console.print(Panel.fit(
-        "[bold cyan]🌬️  Aeolus — P2P Agent Negotiation Demo[/bold cyan]\n"
-        "[dim]Mistral Worldwide Hackathon · Feb 28 – Mar 1, 2026[/dim]",
+        "[bold cyan]🌬️  Aeolus — P2P Agent Negotiation Demo[/bold cyan]",
         border_style="cyan",
     ))
 
