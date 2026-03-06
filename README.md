@@ -1,5 +1,7 @@
 # Aeolus
 
+**A peer-to-peer agent negotiation layer — decentralised discovery, semantic matching, and SLA-based task routing for autonomous AI agents.**
+
 **A peer-to-peer semantic negotiation layer for autonomous AI agents.**
 
 Aeolus fills the gap left by A2A and MCP: decentralised discovery, strategic capability matching, and SLA-based task routing — with no central server or registry.
@@ -65,9 +67,11 @@ Agent A (requester)          NATS            Agent B (provider)
   - **Mistral API** (set `MISTRAL_API_KEY` in `.env`)
   - **Ollama** (local, set `LOCAL_ONLY=true`) with a compatible model such as `ministral:3b`
 
-### Install
+### Install & Run
 
 ```bash
+# Install dependencies
+pip install -r requirements.txt
 git clone https://github.com/aeolus-ai/aeolus.git
 cd aeolus
 pip install -e ".[dashboard,dev]"
@@ -85,6 +89,8 @@ cp .env.example .env
 ```bash
 # Option A: direct install
 nats-server
+# Start NATS server
+nats-server &
 
 # Option B: Docker
 docker run -d -p 4222:4222 nats
@@ -253,7 +259,15 @@ streamlit run spikes/spike_streamlit.py
 - **Multi-hop task chains** — Agent A orchestrates pipelines across B and C
 
 ---
+# Run the main application
+python scripts/main.py
+```
+
+### Configure Agent Behaviour
+
+Edit `scripts/model_description.py` to customise agent capabilities, descriptions, and model tiers.
 
 ## License
 
 MIT — see [LICENSE](LICENSE).
+[MIT](LICENSE)
