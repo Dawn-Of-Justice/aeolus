@@ -270,4 +270,3 @@ Edit `scripts/model_description.py` to customise agent capabilities, description
 ## License
 
 MIT — see [LICENSE](LICENSE).
-[MIT](LICENSE)
