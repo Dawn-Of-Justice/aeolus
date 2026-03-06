@@ -248,8 +248,6 @@ python spikes/spike_ollama_fc.py
 streamlit run spikes/spike_streamlit.py
 ```
 
----
-
 ## Roadmap
 
 - **DID identity** — W3C Decentralised Identifiers for production-grade trust
@@ -259,6 +257,7 @@ streamlit run spikes/spike_streamlit.py
 - **Multi-hop task chains** — Agent A orchestrates pipelines across B and C
 
 ---
+```
 # Run the main application
 python scripts/main.py
 ```
